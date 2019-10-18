@@ -38,7 +38,7 @@ namespace HabitTracker
         /// For example, if a user drank water 15 times,
         /// then the weekly completion would be 15.
         /// </summary>
-        public int WeeklyCompletion { get; set; }
+        public int WeeklyCompletion { get; set; } = 0;
 
         /// <summary>
         /// Weekly success is the percentage of the weekly
@@ -55,6 +55,12 @@ namespace HabitTracker
 
         public Habit()
         {
+        }
+
+        public override string ToString()
+        {
+            return $"Habit Name: {Name}, Weekly Goal: {WeeklyGoal}, " +
+                $"Weekly Completion: {WeeklyCompletion}";
         }
 
     }

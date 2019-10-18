@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace HabitTracker
 {
@@ -20,6 +21,11 @@ namespace HabitTracker
         /// by the user.
         /// </summary>
         public string UserName { get; set; }
+
+        /// <summary>
+        /// Habits stored in an account.
+        /// </summary>
+        public List<Habit> Habits { get; set; }
       
         #endregion
 
